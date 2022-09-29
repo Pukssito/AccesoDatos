@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa333528-15e7-4297-ba2f-a97276c89645" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../ad-ut2-actividad2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ad-ut2-actividad2/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ad-ut2-actividad2/ad-ut2-actividad2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ad-ut2-actividad2/ad-ut2-actividad2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../org.educa.madrid/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../org.educa.madrid/.idea/vcs.xml" afterDir="false" />
-    </list>
+    <list default="true" id="aa333528-15e7-4297-ba2f-a97276c89645" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +21,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/gabriel/IdeaProjects/AccesoDatos/ad-ut2-actividad4",
+    "last_opened_file_path": "/home/gabriel/clase/git/accesoDatos/ad-ut2-actividad4/ad-ut2-actividad4",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"

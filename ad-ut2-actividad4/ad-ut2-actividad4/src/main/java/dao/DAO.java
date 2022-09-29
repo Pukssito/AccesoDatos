@@ -1,11 +1,15 @@
 package dao;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+
 public interface DAO {
 
-    public void mostrarFichero() throws IOException;
+    void mostrarFichero(File fichero) throws IOException;
 
-    int escribeEntero(int num) throws FileNotFoundException;
+    void escribeEntero(File fichero , int num) throws IOException;
+
+    void modificaFichero(File fichero, int num, int pos) throws IOException;
 }

@@ -6,11 +6,11 @@ public class PideNumero {
 
 
     public int pideNumero(){
-        Scanner sc = new Scanner(System.in);
 
-        System.out.println("Introduce un número: ");
-        int numero = sc.nextInt();
-        return numero;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce un numero");
+        int num = sc.nextInt();
+        return num;
     }
 
 }

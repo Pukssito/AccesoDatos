@@ -1,34 +1,56 @@
 package dao;
 
-import entity.Path;
-
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.RandomAccessFile;
+import java.io.*;
 
 public class DaoImpl implements DAO {
 
 
     @Override
-    public void mostrarFichero() throws IOException {
-        Path path = new Path();
+    public void mostrarFichero(File fichero) throws IOException {
 
-        RandomAccessFile raf = new RandomAccessFile(path.ruta(), "r");
-        raf.read();
+        RandomAccessFile raf = new RandomAccessFile(fichero, "r");
+        if (fichero.isFile())
+        {
+           try{
+               raf.seek(0);
+                while (true)
+                {
+                     System.out.println(raf.readInt());
+                }
+           }catch (EOFException e){
+           }
+        }else System.out.println("No es un fichero");
 
     }
 
     @Override
-    public int escribeEntero(int num) throws FileNotFoundException {
-        Path path = new Path();
-        RandomAccessFile raf = new RandomAccessFile(path.ruta(), "rw");
-        try {
-            raf.writeInt(num);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    return num;
+    public void escribeEntero(File fichero, int num) throws IOException {
+
+            RandomAccessFile raf = new RandomAccessFile(fichero, "rw");
+            if (fichero.isFile())
+            {
+                try {
+                    raf.seek(raf.length());
+                    raf.writeInt(num);
+                } catch (IOException e) {
+                    throw new FileNotFoundException();
+                }
+            }else System.out.println("No es un fichero");
+
     }
+
+    @Override
+    public void modificaFichero(File fichero, int num, int pos) throws IOException {
+
+            RandomAccessFile raf = new RandomAccessFile(fichero, "rw");
+            if (fichero.isFile())
+            {
+                raf.seek(pos*4);
+                raf.writeInt(num);
+            }else System.out.println("No es un fichero");
+
+    }
+
 
 }
 
