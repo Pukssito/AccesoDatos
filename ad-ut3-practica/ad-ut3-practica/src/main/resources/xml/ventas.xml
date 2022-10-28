@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ventas>
+    <articulo>
+        <nombre>aksdja</nombre>
+        <tipo>asdasd</tipo>
+        <fecha>25/11/2015</fecha>
+        <precio>70</precio>
+        <coste>10</coste>
+        <beneficio>1</beneficio>
+    </articulo>
+    <articulo>
+        <nombre>lololilo</nombre>
+        <tipo>fgas</tipo>
+        <fecha>12/02/2019</fecha>
+        <precio>45</precio>
+        <coste>7</coste>
+        <beneficio>45</beneficio>
+    </articulo>
+    <articulo>
+        <nombre>ngasudasid</nombre>
+        <tipo>purt</tipo>
+        <fecha>20/02/1986</fecha>
+        <precio>2</precio>
+        <coste>40</coste>
+        <beneficio>4</beneficio>
+    </articulo>
+</ventas>
